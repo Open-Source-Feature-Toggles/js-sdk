@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/DONTSTOPLOVINGMEBABY/Feature-Flagging-Client-API/issues"
   },
-  "homepage": "https://github.com/DONTSTOPLOVINGMEBABY/Feature-Flagging-Client-API#readme"
+  "homepage": "https://github.com/DONTSTOPLOVINGMEBABY/Feature-Flagging-Client-API#readme", 
+  "type": "module"
 }
