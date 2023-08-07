@@ -1,0 +1,32 @@
+.i-need-my-space {
+    margin: 50px;
+}
+
+#red-circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#green-circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+#blue-circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
