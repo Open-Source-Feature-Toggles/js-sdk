@@ -1,4 +1,4 @@
-import FeatureToggleClient from "./script.js"
+import FeatureToggleClient from "../../src/FeatureToggleClient.js"
 
 const bluecircle = document.getElementById('blue-circle')
 const redcircle = document.getElementById('red-circle')
