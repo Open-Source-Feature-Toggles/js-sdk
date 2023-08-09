@@ -25,6 +25,12 @@ function getFlagStatusFromPaylod (payload, flag) {
     return undefined
 }
 
+function getFeatureStatusFromPayload (payload, feature) {
+    let featureExists = payload.features[feature]
+    if (featureExists !== undefined){ return true }
+    return false 
+}
+
 function cachePayloadLocally (payload) {
     localStorage.setItem('cached-payload', JSON.stringify(payload))
 }
@@ -38,5 +44,6 @@ export {
     parseTimeString, 
     getFlagStatusFromPaylod,
     cachePayloadLocally, 
-    getLocalPayload, 
+    getLocalPayload,
+    getFeatureStatusFromPayload,  
 }

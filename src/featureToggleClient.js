@@ -3,6 +3,7 @@ import fetchPayload from './requests.js'
 import { 
     parseTimeString, 
     getFlagStatusFromPaylod,  
+    getFeatureStatusFromPayload, 
 }  from './helpers.js'
 
 
@@ -56,7 +57,11 @@ class FeatureToggleClient extends EventTarget {
 
     getFlag (flag) {
         return getFlagStatusFromPaylod(this.payload, flag)
-    }    
+    }
+
+    getFeature (feature_name) {
+        return getFeatureStatusFromPayload(this.payload, feature_name)
+    }
 }
 
 
