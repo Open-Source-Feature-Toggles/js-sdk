@@ -42,10 +42,17 @@ function getFlagStatusFromPaylod(payload, flag) {
   }
   return undefined;
 }
+function getFeatureStatusFromPayload(payload, feature) {
+  var featureExists = payload.features[feature];
+  if (featureExists !== undefined) {
+    return true;
+  }
+  return false;
+}
 function cachePayloadLocally(payload) {
   localStorage.setItem('cached-payload', JSON.stringify(payload));
 }
 function getLocalPayload() {
   return localStorage.getItem('cached-payload');
 }
-export { parseTimeString, getFlagStatusFromPaylod, cachePayloadLocally, getLocalPayload };
+export { parseTimeString, getFlagStatusFromPaylod, cachePayloadLocally, getLocalPayload, getFeatureStatusFromPayload };

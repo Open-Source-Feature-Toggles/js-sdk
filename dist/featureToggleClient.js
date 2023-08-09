@@ -25,7 +25,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Objec
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 import EVENTS from './constants.js';
 import fetchPayload from './requests.js';
-import { parseTimeString, getFlagStatusFromPaylod } from './helpers.js';
+import { parseTimeString, getFlagStatusFromPaylod, getFeatureStatusFromPayload } from './helpers.js';
 var FeatureToggleClient = /*#__PURE__*/function (_EventTarget) {
   _inherits(FeatureToggleClient, _EventTarget);
   var _super = _createSuper(FeatureToggleClient);
@@ -159,6 +159,11 @@ var FeatureToggleClient = /*#__PURE__*/function (_EventTarget) {
     key: "getFlag",
     value: function getFlag(flag) {
       return getFlagStatusFromPaylod(this.payload, flag);
+    }
+  }, {
+    key: "getFeature",
+    value: function getFeature(feature_name) {
+      return getFeatureStatusFromPayload(this.payload, feature_name);
     }
   }]);
   return FeatureToggleClient;
