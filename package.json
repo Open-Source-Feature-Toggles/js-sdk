@@ -1,5 +1,5 @@
 {
-  "name": "feature-flagging-client-api",
+  "name": "osff-js-sdk",
   "version": "1.0.0",
   "description": "This is a client-side api to compliment a feature-flagging backend service that I have made as part of a personal project. This package is not recommended for production-level/enterprise environments. ",
   "main": "./dist/index.js",
