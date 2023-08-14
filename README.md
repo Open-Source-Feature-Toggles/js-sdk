@@ -34,7 +34,7 @@ client.start()
 
 ### 3. Let the client synchronize
 
-You should wait for the client's ```ready``` event to be fired before attempting to check for active features on the client. Attempting to check for flags before the client is initialized could lead to the application reading invalid flag data.
+You should wait for the client's ```ready``` event to be fired before attempting to check for active features on the client. Attempting to check for flags before the client is initialized could lead to the consumer reading invalid flag data.
 
 ```javascript
 client.addEventListener('ready', () => {
