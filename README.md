@@ -1,4 +1,4 @@
-# Feature-Toggles-JS-SDK
+# OSFT-Client-API
 ### Javascript SDK for [opensourcefeaturetoggles.com](https://opensourcefeaturetoggles.com)
 
 ## Other Repositories that are a part of this project
