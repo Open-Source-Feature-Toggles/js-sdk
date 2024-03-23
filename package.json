@@ -1,6 +1,6 @@
 {
   "name": "osff-js-sdk",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This is a client-side api to compliment a feature-flagging backend service that I have made as part of a personal project. This package is not recommended for production-level/enterprise environments. ",
   "main": "./dist/index.js",
   "files" : [
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DONTSTOPLOVINGMEBABY/Feature-Flagging-Client-API.git"
+    "url": "git+https://github.com/Open-Source-Feature-Toggles/js-sdk.git"
   },
   "keywords": [
     "feature",
@@ -20,9 +20,9 @@
   "author": "Henry Jacobs",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DONTSTOPLOVINGMEBABY/Feature-Flagging-Client-API/issues"
+    "url": "https://github.com/Open-Source-Feature-Toggles/js-sdk/issues"
   },
-  "homepage": "https://github.com/DONTSTOPLOVINGMEBABY/Feature-Flagging-Client-API#readme",
+  "homepage": "https://github.com/Open-Source-Feature-Toggles/js-sdk#readme",
   "type": "module",
   "devDependencies": {
     "@babel/cli": "^7.22.10",
